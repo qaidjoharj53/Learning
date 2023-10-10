@@ -41,7 +41,7 @@ void display_all()
         printf("%d\n", stack[i]);
 }
 
-void display_top()
+void peek()
 {
     if (top == -1)
     {
@@ -73,7 +73,7 @@ int main()
             break;
 
         case 4:
-            display_top();
+            peek();
         case 5:
             exit(0);
         default:
