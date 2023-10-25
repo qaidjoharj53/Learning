@@ -1,29 +1,38 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 #define MAX 50
-
-void pop();
 
 char stack[MAX];
 int top = -1;
 
-int main()
+void push(char alpha)
 {
-    int a = printf("\nEnter the string:");
-    top = a - 1;
-    scanf("%s", stack);
-    printf("Reversed string:\n");
-    pop();
-    return 0;
+    if (top == MAX - 1)
+    {
+        return;
+    }
+    stack[++top] = alpha;
 }
 
 void pop()
 {
     if (top == -1)
     {
-        exit(0);
+        return;
     }
-    printf("%c", stack[top]);
-    pop(stack[top--]);
+    printf("%c", stack[top--]);
+    pop();
+}
+
+int main()
+{
+    char str[] = "programming";
+    printf("\nOriginal string: %s\n", str);
+    for (int i = 0; str[i] != '\0'; i++)
+    {
+        push(str[i]);
+    }
+    printf("\nReversed string: ");
+    pop();
+    return 0;
 }
