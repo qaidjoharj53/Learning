@@ -3,7 +3,7 @@
 
 #define MAX 50
 
-char stack[MAX] = "x+(y*z)/a^b-c";
+char stack[MAX];
 int top = -1;
 
 void push(char);
@@ -12,6 +12,8 @@ int precedence(char);
 
 int main()
 {
+    printf("Enter infix expression: ");
+    scanf("%s", stack);
     for (int i = 0; stack[i] != '\0'; i++)
     {
         if (isalnum(stack[i]))
