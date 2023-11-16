@@ -5,15 +5,15 @@ class displaydata{
     public:
     void show(int v1)
     {
-        cout<<"i           ntegervar.value:"<<v1<<endl;
+        cout<<"integervar value:"<<v1<<endl;
     }
     void show(double v2)
     {
-        cout<<"floatingvar.value:"<<v2<<endl;
+        cout<<"floatingvar value:"<<v2<<endl;
     }
     void show(char* v3)
     {
-        cout << "charactervar.value:" << v3 << endl;
+        cout << "charactervar value:" << v3 << endl;
     }
 };
 

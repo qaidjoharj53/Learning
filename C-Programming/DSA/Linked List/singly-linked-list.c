@@ -16,8 +16,3 @@ void create_node()
     scanf("%d", temp->data);
     temp->next = NULL;
 }
-
-void display()
-{
-    
-}
