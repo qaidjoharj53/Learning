@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int v1 = 100;
+    int v1 = 10;
     cout << "Before try block" << endl;
     try
     {

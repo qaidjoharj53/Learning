@@ -71,7 +71,6 @@ int main()
         case 3:
             display_all();
             break;
-
         case 4:
             peek();
         case 5:

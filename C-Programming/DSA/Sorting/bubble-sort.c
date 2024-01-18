@@ -14,11 +14,6 @@ void bubbleSort(int arr[], int n)
                 arr[j + 1] = temp;
                 count++;
             }
-            for (int k = 0; k < n; k++)
-            {
-                printf("%d ", arr[k]);
-            }
-            printf("\n");
         }
         if (count == 0)
         {
@@ -47,7 +42,6 @@ int main()
     {
         printf("%d ", arr[i]);
     }
-    printf("\n");
 
     return 0;
 }
