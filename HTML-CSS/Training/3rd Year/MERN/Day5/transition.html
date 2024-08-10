@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			div {
+				width: 150px;
+				height: 150px;
+				background-color: mediumpurple;
+				transition: all 600ms ease-in-out;
+			}
+
+			div:hover {
+				transform: rotate(360deg);
+			}
+
+			img {
+				filter: blur(2px);
+				transition: all 400ms ease-in-out;
+			}
+
+			img:hover {
+				transform: scale(2);
+				filter: blur(0);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<img
+			src="https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-1/293484927_917682872490124_5436877847339513495_n.jpg?stp=dst-jpg_p200x200&_nc_cat=106&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=0oH34xN9FVoQ7kNvgEpyX0n&_nc_ht=scontent-del1-2.xx&oh=00_AYCRKWYzVjtEPKmowD2zhH2DYtxMCWcD8Bg9iVKoaCBWAg&oe=66BCBC4B" />
+	</body>
+</html>
