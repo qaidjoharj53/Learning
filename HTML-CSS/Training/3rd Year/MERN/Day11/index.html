@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript DOM Manipulation</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- Task 1: Get and Set Attribute -->
+		<section>
+			<h2>Task 1: Get and Set Attribute</h2>
+			<img id="myImage" src="../Day1/nino.jpeg" alt="Sample Image" />
+			<p id="attributeValue"></p>
+			<button onclick="getAttributeValue()">
+				Get Image Alt Attribute
+			</button>
+			<button onclick="setAttributeValue()">
+				Set Image Alt Attribute
+			</button>
+		</section>
+
+		<!-- Task 3: Style Manipulation -->
+		<section>
+			<h2>Task 3: Style Manipulation</h2>
+			<div id="myDiv">Hover over me!</div>
+			<br />
+			<input
+				type="number"
+				id="fontSizeInput"
+				placeholder="Enter font size (px)" />
+			<button onclick="updateFontSize()">Update Font Size</button>
+		</section>
+
+		<!-- Task 4: Manipulating Classes -->
+		<section>
+			<h2>Task 4: Manipulating Classes</h2>
+			<p id="myParagraph">
+				Click the buttons to manipulate classes on this paragraph.
+			</p>
+			<button onclick="addHighlight()">Add Highlight</button>
+			<button onclick="removeHighlight()">Remove Highlight</button>
+			<button onclick="toggleHidden()">Toggle Hidden</button>
+		</section>
+
+		<!-- Task 5: Creating Elements -->
+		<section>
+			<h2>Task 5: Creating Elements</h2>
+			<button onclick="createParagraph()">Create Paragraph</button>
+			<button onclick="createListItem()">Create List Item</button>
+			<input
+				type="text"
+				id="listItemText"
+				placeholder="Enter list item text" />
+			<ul id="myList">
+				<li>Existing Item 1</li>
+				<li>Existing Item 2</li>
+			</ul>
+		</section>
+
+		<!-- Task 6: Append, Prepend, or insertBefore -->
+		<section>
+			<h2>Task 6: Append, Prepend, or insertBefore</h2>
+			<div id="container">
+				<p id="referenceElement">This is a reference element.</p>
+			</div>
+			<button onclick="appendDiv()">Append Div</button>
+			<button onclick="prependImage()">Prepend Image</button>
+			<button onclick="insertParagraph()">
+				Insert Paragraph Before Reference
+			</button>
+		</section>
+
+		<!-- Task 7: Remove Child and Remove Self -->
+		<section>
+			<h2>Task 7: Remove Child and Remove Self</h2>
+			<div id="parent">
+				<p id="childElement">This is a child element.</p>
+			</div>
+			<button onclick="removeChildElement()">Remove Child Element</button>
+			<button onclick="removeSelf()">Remove Self</button>
+		</section>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
